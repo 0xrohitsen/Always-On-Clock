@@ -1,39 +1,80 @@
-# AlwaysScreen Clock 🕒
+# Always On Clock 🕒
 
-AlwaysScreen Clock is a minimalist, open-source Android "Always-On" display app. It transforms your phone into a beautiful analog desk clock while ensuring the screen never sleeps and automatically reopens when you are inactive.
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Stable-brightgreen?style=for-the-badge)
 
-## 🌟 Features
+**Always On Clock** is a smart "Kiosk Mode" and Always-On Display utility for Android. It transforms your device into a beautiful desk clock that **never sleeps**, automatically locking the screen when you are inactive.
 
-- **Always-On Display:** Prevents the screen from sleeping using `FLAG_KEEP_SCREEN_ON`.
-- **Minimalist Analog Clock:** A clean, high-contrast design with smooth animations.
-- **Smart Inactivity Reopen:** Automatically brings the clock back to the front after a user-defined idle period (15s, 30s, 1m).
-- **Global Touch Detection:** Uses an Accessibility Service to detect user activity across all apps (e.g., while using Telegram or WhatsApp), ensuring the clock only appears when you are truly idle.
-- **Slide to Unlock:** A secure, intuitive slider to minimize the app and return to normal phone usage.
-- **Immersive Mode:** Completely hides system bars for a distraction-free experience.
-- **Boot Support:** Optionally starts automatically when the device boots up.
+Perfect for studying, working, or using an old phone as a dedicated desk clock.
 
-## 🛠 Permissions Explained
+---
 
-To function as a kiosk-style display, the app requires:
-1. **Display over other apps:** Allows the app to reappear automatically.
-2. **Accessibility Service:** Required to detect user interaction (taps/scrolls) globally so the clock doesn't interrupt you while using other apps.
-3. **Foreground Service:** Keeps the inactivity monitor running reliably in the background.
+## 📥 Download
 
-## 🚀 How to Use
+Get the latest version directly for your Android device:
 
-1. **Install** the APK.
-2. **Launch** AlwaysScreen Clock.
-3. **Grant Permissions:** Follow the on-screen prompts to enable "Display over other apps" and the "AlwaysScreen Touch Detector" in Accessibility settings.
-4. **Set Timeout:** Tap the invisible area in the top-right corner to change the inactivity duration.
-5. **Relax:** Place your phone on a stand. The clock will appear automatically whenever you stop using the device.
+<a href="https://github.com/0xrohitsen/Always-On-Clock/releases/download/v1.0/Always.On.Clock.apk">
+  <img src="https://img.shields.io/badge/Download_APK-v1.0-blue?style=for-the-badge&logo=android" height="45">
+</a>
 
-## 📂 Project Structure
+---
 
-- `MainActivity.kt`: Handles the UI, slider logic, and settings.
-- `AnalogClockView.kt`: Custom View for the high-performance clock rendering.
-- `InactivityService.kt`: Background monitor for idle time management.
-- `GlobalTouchService.kt`: Accessibility service for global touch detection.
+## 📸 Screenshots
+
+<div align="center">
+  <img src="https://via.placeholder.com/300x600?text=Clock+Face" width="250" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://via.placeholder.com/300x600?text=Slide+to+Unlock" width="250" />
+</div>
+
+---
+
+## 🚀 Key Features
+
+* **🔒 Smart Inactivity Lock:** Automatically detects when you stop touching the screen (no motion sensors required!) and locks the app.
+* **💡 Always On Display:** Overrides system sleep settings. Your screen stays awake indefinitely while the clock is visible.
+* **👆 Slide-to-Unlock:** A secure, "iPhone-style" slider prevents accidental exits.
+* **🔋 OLED Friendly:** Uses a pure black background (`#000000`) to maximize battery life on AMOLED screens.
+* **⚡ Zero-Touch Logic:** Unlike other apps that use the gyroscope (shaking), this app strictly monitors **touch inputs**, so it works perfectly even if the phone is stationary on a stand.
+
+---
+
+## 🛠️ How It Works
+
+1.  **Launch the App:** The app immediately keeps your screen awake.
+2.  **Touch the Screen:** As long as you are tapping or scrolling, the timer resets.
+3.  **Go Idle:** After **15 seconds** (configurable) of no touching, the **Lock Screen** activates.
+4.  **Unlock:** Drag the slider to the right to return to the main view.
+
+---
+
+## ⚙️ Installation Guide
+
+1.  Download the `.apk` file from the [link above](https://github.com/0xrohitsen/Always-On-Clock/releases/download/v1.0/Always.On.Clock.apk).
+2.  Open the file on your Android device.
+3.  If prompted, allow **"Install from Unknown Sources"** (since this is an open-source app, it's not on the Play Store yet).
+4.  Open the app and grant any necessary permissions.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you have ideas for new clock faces or features:
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+---
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Distributed under the **MIT License**. See `LICENSE` for more information.
+
+<div align="center">
+  <sub>Built with ❤️ by <a href="https://github.com/0xrohitsen">0xrohitsen</a></sub>
+</div>
