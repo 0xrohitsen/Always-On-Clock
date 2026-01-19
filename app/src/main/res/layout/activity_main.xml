@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <!-- Invisible Settings Trigger (Top Right) -->
+    <View
+        android:id="@+id/btnSettings"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.screenlight.app.AnalogClockView
+        android:id="@+id/analogClock"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/sliderContainer"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Slide to Unlock Container -->
+    <FrameLayout
+        android:id="@+id/sliderContainer"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/slider_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Slide to Unlock >>"
+            android:textColor="#4DFFFFFF"
+            android:textSize="14sp"
+            android:letterSpacing="0.1" />
+
+        <SeekBar
+            android:id="@+id/unlockSlider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:max="100"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:progressDrawable="@android:color/transparent"
+            android:thumb="@drawable/ic_lock_thumb"
+            android:splitTrack="false" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

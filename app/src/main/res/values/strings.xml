@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Screen Light</string>
+    <string name="accessibility_description">Required to detect user activity across all apps to prevent the clock from showing while you are active.</string>
+</resources>
