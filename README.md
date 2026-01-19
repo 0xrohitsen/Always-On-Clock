@@ -25,9 +25,11 @@ Get the latest version directly for your Android device:
 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/20f2555c-2d1b-40f5-88d0-b6ae3433bb73" width="300" />
+  <img src="https://github.com/user-attachments/assets/20f2555c-2d1b-40f5-88d0-b6ae3433bb73" width="280" />
+  
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/user-attachments/assets/2e085e52-d9a2-4951-a33f-2a80354ef0bd" width="300" />
+  
+  <img src="https://github.com/user-attachments/assets/2e085e52-d9a2-4951-a33f-2a80354ef0bd" width="280" />
 </p>
 
 ## 🚀 Key Features
